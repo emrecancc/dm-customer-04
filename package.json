@@ -12,6 +12,7 @@
   "dependencies": {},
   "devDependencies": {
     "redis": "*",
-    "gunicorn": "*"
+    "gunicorn": "*",
+    "beanie": "*"
   }
 }
