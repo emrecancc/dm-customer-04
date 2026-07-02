@@ -1,15 +1,11 @@
 {
   "name": "node-nextjs",
   "version": "1.0.0",
-  "scripts": {
-    "test": "jest",
-    "build": "tsc",
-    "start": "node dist/index.js"
-  },
   "dependencies": {
-    "express": "^4.18.0"
+    "sqlite3": "latest"
   },
-  "devDependencies": {
-    "jest": "*"
+  "scripts": {
+    "build": "npm run build:native",
+    "test": "jest"
   }
 }
