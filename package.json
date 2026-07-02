@@ -5,21 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "test": "jest"
+    "start": "node app.js"
   },
   "dependencies": {
-    "next": "*",
-    "react": "*",
-    "react-dom": "*"
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   },
-  "devDependencies": {
-    "@types/react": "*",
-    "@types/react-dom": "*",
-    "typescript": "*",
-    "jest": "*",
-    "@testing-library/react": "*",
-    "@testing-library/jest-dom": "*"
-  }
+  "devDependencies": {}
 }
