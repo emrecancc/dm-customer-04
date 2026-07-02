@@ -1,22 +1,22 @@
 {
   "name": "dm-customer-04",
   "version": "1.0.0",
-  "private": true,
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
-    "preinstall": "apt-get update && apt-get install -y build-essential",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "test": "jest"
   },
   "dependencies": {
-    "next": "13.4.7",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "next": "^13.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
-    "typescript": "^5.0.0"
+    "jest": "^29.0.0",
+    "babel-jest": "^29.0.0"
   }
 }
