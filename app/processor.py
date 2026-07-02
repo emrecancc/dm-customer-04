@@ -1,11 +1,16 @@
 import re
 
-def process_lines(text: str) -> list:
-    results = []
-    lines = text.splitlines()
+
+def process(lines):
+    """Process an iterable of lines and return a dictionary of key-value pairs.
+
+    Each line is expected to be in the format ``key=value`` where ``value`` is an
+    integer. Lines that do not match this pattern are ignored.
+    """
+    result = {}
     for line in lines:
-        if m := re.match(r'(\w+)=(\d+)', line):
-            results.append({'key': m.group(1), 'val': int(m.group(2))})
-        elif chunk := line.strip():
-            results.append({'raw': chunk})
-    return results
+        m = re.match(r'(\w+)=(\d+)', line)
+        if m:
+            key, value = m.group(1), int(m.group(2))
+            result[key] = value
+    return result
