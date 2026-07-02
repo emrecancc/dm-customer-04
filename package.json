@@ -9,6 +9,7 @@
     "start": "node index.js"
   },
   "devDependencies": {
-    "jest": "*"
+    "jest": "*",
+    "http2": "*"
   }
 }
