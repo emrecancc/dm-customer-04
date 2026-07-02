@@ -7,16 +7,19 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "dependencies": {
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest"
+    "next": "*",
+    "react": "*",
+    "react-dom": "*"
   },
   "devDependencies": {
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "typescript": "latest"
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "typescript": "*",
+    "jest": "*",
+    "@testing-library/react": "*",
+    "@testing-library/jest-dom": "*"
   }
 }
