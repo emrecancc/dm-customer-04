@@ -8,5 +8,10 @@
   },
   "dependencies": {
     "cheerio": "*"
+  },
+  "devDependencies": {
+    "react": "*",
+    "react-dom": "*",
+    "a": "*"
   }
 }
