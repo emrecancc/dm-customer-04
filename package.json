@@ -17,7 +17,6 @@
   },
   "devDependencies": {
     "jest": "^29.0.0",
-    "babel-jest": "^29.0.0",
-    "a": "*"
+    "babel-jest": "^29.0.0"
   }
 }
