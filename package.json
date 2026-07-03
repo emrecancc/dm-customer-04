@@ -3,19 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "preinstall": "apt-get update && apt-get install -y build-essential",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "node app.js"
   },
   "dependencies": {
-    "next": "13.4.12",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   },
-  "devDependencies": {
-    "eslint": "^8.45.0",
-    "eslint-config-next": "13.4.12"
-  }
+  "devDependencies": {}
 }
