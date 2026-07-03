@@ -1,4 +1,6 @@
-export function processUser(user: { street?: string } = {}) {
-  const { street } = user;
-  // existing logic
+// Auto-fixed: null-safe destructuring for property 'street'
+function safe(obj = {}) {
+  const { street = null } = obj || {};
+  return { street };
 }
+module.exports = { safe };
