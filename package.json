@@ -12,5 +12,7 @@
     "react": "latest",
     "react-dom": "latest"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "a": "*"
+  }
 }
