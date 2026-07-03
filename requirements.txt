@@ -1,2 +1,1 @@
-orjson
-matplotlib
+tensorflow>=2.10.0
