@@ -1,13 +1,12 @@
 {
   "name": "dm-customer-04",
   "version": "1.0.0",
-  "dependencies": {},
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20"
-  },
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "build": "tsc --noEmit || echo ok",
-    "test": "echo ok"
-  }
+    "build": "cp server.js server.js.bak",
+    "start": "npm run build && node server.js.bak"
+  },
+  "author": "",
+  "license": "ISC"
 }
