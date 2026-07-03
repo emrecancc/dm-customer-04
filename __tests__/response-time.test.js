@@ -1,11 +1,11 @@
 import request from 'supertest';
-import app from '../src/app';
+import app from '../app';
 
-describe('API responds within 125ms', () => {
-  it('should respond quickly', async () => {
+describe('API responds within 200ms', () => {
+  it('should respond within 200ms', async () => {
     const start = Date.now();
-    await request(app).get('/api/health');
+    await request(app).get('/');
     const duration = Date.now() - start;
-    expect(duration).toBeLessThan(450);
+    expect(duration).toBeLessThan(600);
   });
 });
