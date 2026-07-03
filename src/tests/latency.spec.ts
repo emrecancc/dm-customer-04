@@ -1,11 +1,8 @@
-import request from 'supertest';
-import app from '../app';
+import { api } from '../src/api';
 
-describe('API latency', () => {
-  it('responds within 700ms', async () => {
-    const start = Date.now();
-    await request(app).get('/');
-    const duration = Date.now() - start;
-    expect(duration).toBeLessThan(700);
-  });
+test('API responds within 500ms', async () => {
+  const start = Date.now();
+  await api();
+  const elapsed = Date.now() - start;
+  expect(elapsed).toBeLessThan(500);
 });
